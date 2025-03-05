@@ -7,8 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      -name : Initialisation
-       uses: echo " Initialisation"
+      - name : Initialisation
+        run : echo " Initialisation"
+        
       - name: Checkout code
         uses: actions/checkout@v2
 
