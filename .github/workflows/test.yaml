@@ -9,7 +9,7 @@ jobs:
 
       - name : Initialisation
         run : echo " Initialisation"
-        
+
       - name: Checkout code
         uses: actions/checkout@v2
 
@@ -20,13 +20,15 @@ jobs:
 
       - name: Install Python dependencies
         run: |
-          cd backend
           pip install -r requirements.txt
           pip install pytest pytest-flask
 
+          
+          
+
       - name: Run Flask tests
         run: |
-          cd backend
+          cd Backend
           pytest tests/
 
       
