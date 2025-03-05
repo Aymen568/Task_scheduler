@@ -29,6 +29,6 @@ jobs:
       - name: Run Flask tests
         run: |
           cd Backend
-          pytest tests/
+          pytest Tests/
 
       
