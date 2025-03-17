@@ -3,7 +3,7 @@ const baseUrl = 'http://127.0.0.1:5000';
 document.addEventListener('DOMContentLoaded', () => {
     const taskForm = document.getElementById('task-form');
     const taskList = document.getElementById('task-list');
-    const graphDiv = document.getElementById('graph');
+    const graphDiv = document.getElementById('graph')
 
     taskForm.addEventListener('submit', async (e) => {
         e.preventDefault();
